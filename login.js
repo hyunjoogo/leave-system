@@ -1,6 +1,7 @@
 const loginForm = document.querySelector('.login_form');
 const input = document.querySelector('#username');
 
+// validation message
 const validityMessage = {
     badInput: "[커스텀 메세지] 잘못된 입력입니다.",
     patternMismatch: "[커스텀 메세지] 패턴에 맞게 입력하세요",
@@ -13,7 +14,7 @@ const validityMessage = {
     valueMissing: "[커스텀 메세지] 이 필드를 반드시 입력하세요",
 };
 
-function getMessage(validity) {
+const getMessage = (validity) => {
     for (const key in validityMessage) {
         if (validity[key]) {
             return validityMessage[key]
@@ -52,10 +53,10 @@ function showError(input) {
 
 input.addEventListener("input", () => {
     // 커스텀 에러메세지 설정
-    showError(input)
+    showError(input);
 })
 
 loginForm.addEventListener('submit', onSubmit);
 
-// 1. validation
+
 

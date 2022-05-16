@@ -9,7 +9,7 @@
     background-color: var(--text-primary);
 }
 
-.login_title {
+.login__title {
     height: 25%;
     line-height: 100%;
     font-size: 1.6rem;
@@ -17,38 +17,38 @@
     color: var(--login-text-color);
 }
 
-.login_form {
+.login__form {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.input_wrapper {
+.input-wrapper {
     margin-bottom: 30px;
 }
 
-.login_input {
+.login-input {
     width: 20rem;
     height: 3rem;
     font-size: 1rem;
     border: 1px solid var(--login-ui-border-color);
 }
 
-.was-validated.login_input:invalid {
+.was-validated.login-input:invalid {
     border-color: red;
 }
 
-.login_input:valid {
+.login-input:valid {
     border-color: blue;
     margin-bottom: 30px;
 }
 
-.input_error {
+.input-error {
     color: red;
 }
 
-.login_button {
+.login-button {
     width: 20rem;
     height: 3.2rem;
     margin-top: 1.4rem;
