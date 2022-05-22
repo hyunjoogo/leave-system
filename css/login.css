@@ -18,14 +18,14 @@
 }
 
 .login__form {
-    background-color: white;
+    background-color: var(--text-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .input-wrapper {
-    margin-bottom: 30px;
+    /*margin-bottom: 1.2rem;*/
 }
 
 .login-input {
@@ -40,11 +40,13 @@
 }
 
 .login-input:valid {
-    border-color: blue;
-    margin-bottom: 30px;
+    border: 2px solid blue;
+    /*margin-bottom: 0px;*/
 }
 
 .input-error {
+    font-size: 0.4rem;
+    padding: 0.4rem;
     color: red;
 }
 
