@@ -13,14 +13,13 @@ const validityMessage = {
   valueMissing: '[커스텀 메세지] 이 필드를 반드시 입력하세요',
 };
 
-function getMessage(validity) {
+const getMessage = (validity) => {
   for (const key in validityMessage) {
     if (validity[key]) {
       return validityMessage[key];
     }
   }
-  return null;
-}
+};
 
 const onSubmit = (event) => {
   event.preventDefault();
@@ -46,8 +45,8 @@ const onSubmit = (event) => {
 };
 
 function showError(target) {
-  document.querySelector('.login_input').classList.add('was-validated');
-  document.querySelector('.input_error').textContent = getMessage(target.validity);
+  document.querySelector('.login-input').classList.add('was-validated');
+  document.querySelector('.input-error').textContent = getMessage(target.validity);
   document.querySelector('.input_wrapper').style.marginBottom = '0';
 }
 
