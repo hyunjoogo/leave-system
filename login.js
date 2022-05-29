@@ -14,7 +14,7 @@ const validityMessage = {
   valueMissing: '[커스텀 메세지] 이 필드를 반드시 입력하세요',
 };
 
-const getMessage = validity => {
+const getMessage = (validity) => {
   for (const key in validityMessage) {
     if (validity[key]) {
       return validityMessage[key];
@@ -22,7 +22,7 @@ const getMessage = validity => {
   }
 };
 
-const onSubmit = event => {
+const onSubmit = (event) => {
   event.preventDefault();
   const username = document.querySelector('#username').value;
   const password = document.querySelector('#password').value;
@@ -45,10 +45,10 @@ const onSubmit = event => {
   // server => error.message (1. password, 2. id, 3. server error)
 };
 
-function showError(input) {
+function showError(target) {
   document.querySelector('.login-input').classList.add('was-validated');
   document.querySelector('.input-error').textContent = getMessage(
-    input.validity,
+    target.validity,
   );
   document.querySelector('.input_wrapper').style.marginBottom = '0';
 }
