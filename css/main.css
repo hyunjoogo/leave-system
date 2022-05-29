@@ -1,65 +1,85 @@
 main {
-  width: 100vw;
-  display: flex;
+    width: 100vw;
+    display: flex;
 }
 
 main nav {
-  background-color: var(--background-navigation);
-  border-right: 1px solid var(--nav-border);
-  height: 100vh;
+    background-color: var(--background-navigation);
+    border-right: 1px solid var(--nav-border);
+    height: 100vh;
 }
 
 main nav ul {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 main nav ul li {
-  width: 150px;
-  margin-bottom: 10px;
+    width: 150px;
+    margin-bottom: 10px;
 }
 
 #modal {
-  display: none;
+    display: none;
 }
 
 #modal.show {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2px);
-  color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    color: white;
 }
 
 #modal .modal-window {
-  width: 50%;
-  height: 50%;
-  background-color: var(--background-primary);
-  border-radius: 10px;
-  padding: 20px;
+    width: 50%;
+    height: 50%;
+    background-color: var(--background-primary);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+#modal .modal-window.sm {
+    min-width: 30%;
+    height: 10%;
+    background-color: var(--background-primary);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #modal header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 #modal header .title {
-  font-size: 24px;
-  font-weight: 700;
+    font-size: 24px;
+    font-weight: 700;
 }
+
 #modal .modal-window .modal-content {
-  padding-top: 10px;
-  font-size: 24px;
-  font-weight: 700;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#modal .modal-window .modal-close {
+    position: absolute;
+    top: calc(0% + 10px);
+    right: calc(0% + 10px);
+    background: none;
+    color: white;
+    font-size: 30px;
+
 }
