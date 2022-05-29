@@ -44,9 +44,9 @@ const onSubmit = (event) => {
   // server => error.message (1. password, 2. id, 3. server error)
 };
 
-function showError(target) {
+function showError(input) {
   document.querySelector('.login-input').classList.add('was-validated');
-  document.querySelector('.input-error').textContent = getMessage(target.validity);
+  document.querySelector('.input-error').textContent = getMessage(input.validity);
   document.querySelector('.input_wrapper').style.marginBottom = '0';
 }
 
