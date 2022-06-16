@@ -25,11 +25,6 @@
   - 휴가 열람
 - 관리자 <-> 사용자 전환
 
-
-# 색상참조 사이트
-- JAVASCRIPT.INFO
-- https://ko.javascript.info/first-steps
-
 # 기능참조 사이트
 - https://shiftee.io/ko/leave
 
